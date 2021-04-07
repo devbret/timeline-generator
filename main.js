@@ -27,7 +27,7 @@ function main() {
     }
     if (e.clientY < rect.bottom) {
       timeline.style.borderTop = `${Math.abs(
-        (rect.top - e.clientY) / 20
+        (rect.bottom - e.clientY) / 20
       ).toFixed(0)}px solid black`;
     }
   });
